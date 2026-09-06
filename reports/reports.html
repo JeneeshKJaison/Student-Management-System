@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reports | Student Management System</title>
+
+    <link rel="stylesheet" href="reports.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="brand">
+            <div class="logo">SMS</div>
+
+            <div>
+                <h1>Student Management System</h1>
+                <p>Reports</p>
+            </div>
+        </div>
+
+        <div class="admin">
+            Admin
+        </div>
+
+    </header>
+
+
+    <!-- Main -->
+    <main class="container">
+
+        <!-- Page Title -->
+        <div class="page-header">
+
+            <div>
+                <h2>Reports Dashboard</h2>
+                <p>
+                    View student performance, attendance and academic statistics.
+                </p>
+            </div>
+
+            <button class="print-button" onclick="window.print()">
+                Print Report
+            </button>
+
+        </div>
+
+
+        <!-- Summary Cards -->
+        <section class="summary">
+
+            <div class="card">
+                <div class="card-icon">👨‍🎓</div>
+
+                <div>
+                    <p>Total Students</p>
+                    <h3 id="totalStudents">0</h3>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon">📊</div>
+
+                <div>
+                    <p>Average Marks</p>
+                    <h3 id="averageMarks">0%</h3>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon">📅</div>
+
+                <div>
+                    <p>Average Attendance</p>
+                    <h3 id="averageAttendance">0%</h3>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon">🏆</div>
+
+                <div>
+                    <p>Top Performer</p>
+                    <h3 id="topPerformer">-</h3>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Performance Report -->
+        <section class="section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Student Performance</h2>
+                    <p>Academic performance of students</p>
+                </div>
+
+                <select id="courseFilter">
+                    <option value="all">All Courses</option>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="IT">IT</option>
+                </select>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Student Name</th>
+                            <th>Course</th>
+                            <th>Marks</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="performanceTable">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- Attendance + Top Performers -->
+        <div class="two-column">
+
+            <!-- Attendance -->
+            <section class="section">
+
+                <div class="section-header">
+
+                    <div>
+                        <h2>Attendance Report</h2>
+                        <p>Student attendance overview</p>
+                    </div>
+
+                </div>
+
+                <div id="attendanceList">
+                </div>
+
+            </section>
+
+
+            <!-- Top Performers -->
+            <section class="section">
+
+                <div class="section-header">
+
+                    <div>
+                        <h2>Top Performers</h2>
+                        <p>Highest academic performers</p>
+                    </div>
+
+                </div>
+
+                <div id="topPerformers">
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- Course Summary -->
+        <section class="section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Course Summary</h2>
+                    <p>Number of students in each course</p>
+                </div>
+
+            </div>
+
+
+            <div class="course-summary">
+
+                <div class="course-card">
+                    <span>CSE</span>
+                    <strong id="cseCount">0</strong>
+                </div>
+
+                <div class="course-card">
+                    <span>ECE</span>
+                    <strong id="eceCount">0</strong>
+                </div>
+
+                <div class="course-card">
+                    <span>IT</span>
+                    <strong id="itCount">0</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <span>© 2026 Student Management System</span>
+        <span>Reports Module</span>
+    </footer>
+
+
+    <script src="reports.js"></script>
+
+</body>
+</html>
