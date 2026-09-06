@@ -1,4 +1,4 @@
-# Student Management System
+# Student Management System - Backend Module
 
 A simple full-stack Student Management System built with **HTML, CSS, JavaScript, Node.js (Express) and PostgreSQL**.
 
