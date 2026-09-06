@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Management System</title>
+<style>
+  body{font-family:Segoe UI,Arial,sans-serif;background:#f4f6f9;margin:0;padding:0;}
+  header{background:#2c3e50;color:#fff;padding:24px;text-align:center;}
+  .cards{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;padding:40px 20px;}
+  .card{background:#fff;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.1);width:220px;padding:24px;text-align:center;text-decoration:none;color:#2c3e50;transition:.2s;}
+  .card:hover{transform:translateY(-4px);box-shadow:0 6px 16px rgba(0,0,0,.15);}
+  .card h3{margin:0 0 8px;}
+</style>
+</head>
+<body>
+  <header>
+    <h1>Student Management System</h1>
+    <p>A modular full-stack project (HTML/CSS/JS + Node.js + PostgreSQL)</p>
+  </header>
+  <div class="cards">
+    <a class="card" href="login/login.html"><h3>🔐 Login</h3><p>Sign in to the system</p></a>
+    <a class="card" href="dashboard/dashboard.html"><h3>📊 Dashboard</h3><p>Overview & quick stats</p></a>
+    <a class="card" href="students/students.html"><h3>🎓 Students</h3><p>Manage student records</p></a>
+    <a class="card" href="reports/reports.html"><h3>📑 Reports</h3><p>Attendance & grade reports</p></a>
+  </div>
+</body>
+</html>
