@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System - Reports</title>
+
+    <link rel="stylesheet" href="reports.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <div class="header-left">
+            <div class="logo">SMS</div>
+
+            <div>
+                <h1>Student Management System</h1>
+                <p>Reports</p>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <span class="user-name">Admin</span>
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="container">
+
+        <!-- Page Heading -->
+        <section class="page-heading">
+            <div>
+                <h2>Reports Dashboard</h2>
+                <p>View student performance, attendance and academic statistics.</p>
+            </div>
+
+            <button class="btn-primary" onclick="window.print()">
+                Print Report
+            </button>
+        </section>
+
+
+        <!-- ================= SUMMARY CARDS ================= -->
+        <section class="summary-grid">
+
+            <div class="summary-card">
+                <div class="card-icon"></div>
+
+                <div>
+                    <p>Total Students</p>
+                    <h3 id="totalStudents">0</h3>
+                </div>
+            </div>
+
+
+            <div class="summary-card">
+                <div class="card-icon"></div>
+
+                <div>
+                    <p>Average Marks</p>
+                    <h3 id="averageMarks">0%</h3>
+                </div>
+            </div>
+
+
+            <div class="summary-card">
+                <div class="card-icon"></div>
+
+                <div>
+                    <p>Average Attendance</p>
+                    <h3 id="averageAttendance">0%</h3>
+                </div>
+            </div>
+
+
+            <div class="summary-card">
+                <div class="card-icon"></div>
+
+                <div>
+                    <p>Top Performer</p>
+                    <h3 id="topPerformer">-</h3>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ================= PERFORMANCE REPORT ================= -->
+        <section class="report-section">
+
+            <div class="section-header">
+                <div>
+                    <h2>Student Performance</h2>
+                    <p>Academic performance of students</p>
+                </div>
+
+                <select id="courseFilter">
+                    <option value="all">All Courses</option>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="IT">IT</option>
+                </select>
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Student Name</th>
+                            <th>Course</th>
+                            <th>Marks</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="performanceTable">
+
+                        <!-- Data will be inserted using JavaScript -->
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LOWER GRID ================= -->
+        <section class="reports-grid">
+
+
+            <!-- ATTENDANCE REPORT -->
+            <div class="report-section">
+
+                <div class="section-header">
+                    <div>
+                        <h2>Attendance Report</h2>
+                        <p>Student attendance overview</p>
+                    </div>
+                </div>
+
+
+                <div class="attendance-list" id="attendanceList">
+
+                    <!-- Attendance data will be inserted using JavaScript -->
+
+                </div>
+
+            </div>
+
+
+            <!-- TOP PERFORMERS -->
+            <div class="report-section">
+
+                <div class="section-header">
+                    <div>
+                        <h2>Top Performers</h2>
+                        <p>Highest performing students</p>
+                    </div>
+                </div>
+
+
+                <div class="top-performers" id="topPerformers">
+
+                    <!-- Top performers will be inserted using JavaScript -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COURSE SUMMARY ================= -->
+        <section class="report-section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Course Summary</h2>
+                    <p>Number of students in each course</p>
+                </div>
+
+            </div>
+
+
+            <div class="course-summary">
+
+                <div class="course-item">
+                    <span>CSE</span>
+                    <strong id="cseCount">0</strong>
+                </div>
+
+                <div class="course-item">
+                    <span>ECE</span>
+                    <strong id="eceCount">0</strong>
+                </div>
+
+                <div class="course-item">
+                    <span>IT</span>
+                    <strong id="itCount">0</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <p>
+            © 2026 Student Management System
+        </p>
+
+        <p>
+            Reports Module
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="reports.js"></script>
+
+</body>
+</html>
