@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Student Management System - Reports</title>
 
     <link rel="stylesheet" href="reports.css">
@@ -11,9 +10,8 @@
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- Header -->
     <header class="header">
-
         <div class="header-left">
             <div class="logo">SMS</div>
 
@@ -24,29 +22,30 @@
         </div>
 
         <div class="header-right">
-            <span class="user-name">Admin</span>
+            <span>Admin</span>
         </div>
-
     </header>
 
 
-    <!-- ================= MAIN CONTENT ================= -->
+    <!-- Main Content -->
     <main class="container">
 
         <!-- Page Heading -->
         <section class="page-heading">
             <div>
                 <h2>Reports Dashboard</h2>
-                <p>View student performance, attendance and academic statistics.</p>
+                <p>
+                    View student performance, attendance and academic statistics.
+                </p>
             </div>
 
-            <button class="btn-primary" onclick="window.print()">
+            <button class="print-btn" onclick="window.print()">
                 Print Report
             </button>
         </section>
 
 
-        <!-- ================= SUMMARY CARDS ================= -->
+        <!-- Summary Cards -->
         <section class="summary-grid">
 
             <div class="summary-card">
@@ -54,7 +53,7 @@
 
                 <div>
                     <p>Total Students</p>
-                    <h3 id="totalStudents">0</h3>
+                    <h3>50</h3>
                 </div>
             </div>
 
@@ -64,7 +63,7 @@
 
                 <div>
                     <p>Average Marks</p>
-                    <h3 id="averageMarks">0%</h3>
+                    <h3>78.5%</h3>
                 </div>
             </div>
 
@@ -74,38 +73,40 @@
 
                 <div>
                     <p>Average Attendance</p>
-                    <h3 id="averageAttendance">0%</h3>
+                    <h3>86.2%</h3>
                 </div>
             </div>
 
 
             <div class="summary-card">
-                <div class="card-icon"></div>
+                <div class="card-icon">git</div>
 
                 <div>
                     <p>Top Performer</p>
-                    <h3 id="topPerformer">-</h3>
+                    <h3>Arjun</h3>
                 </div>
             </div>
 
         </section>
 
 
-        <!-- ================= PERFORMANCE REPORT ================= -->
+        <!-- Student Performance -->
         <section class="report-section">
 
             <div class="section-header">
+
                 <div>
                     <h2>Student Performance</h2>
                     <p>Academic performance of students</p>
                 </div>
 
-                <select id="courseFilter">
-                    <option value="all">All Courses</option>
-                    <option value="CSE">CSE</option>
-                    <option value="ECE">ECE</option>
-                    <option value="IT">IT</option>
+                <select>
+                    <option>All Courses</option>
+                    <option>CSE</option>
+                    <option>ECE</option>
+                    <option>IT</option>
                 </select>
+
             </div>
 
 
@@ -123,9 +124,47 @@
                         </tr>
                     </thead>
 
-                    <tbody id="performanceTable">
+                    <tbody>
 
-                        <!-- Data will be inserted using JavaScript -->
+                        <tr>
+                            <td>101</td>
+                            <td>Rahul</td>
+                            <td>CSE</td>
+                            <td>85%</td>
+                            <td><span class="grade grade-a">A</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>102</td>
+                            <td>Anu</td>
+                            <td>ECE</td>
+                            <td>76%</td>
+                            <td><span class="grade grade-b">B</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>103</td>
+                            <td>Arjun</td>
+                            <td>CSE</td>
+                            <td>92%</td>
+                            <td><span class="grade grade-a">A+</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>104</td>
+                            <td>Meera</td>
+                            <td>IT</td>
+                            <td>88%</td>
+                            <td><span class="grade grade-a">A</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>105</td>
+                            <td>Vishnu</td>
+                            <td>CSE</td>
+                            <td>69%</td>
+                            <td><span class="grade grade-c">C</span></td>
+                        </tr>
 
                     </tbody>
 
@@ -136,44 +175,118 @@
         </section>
 
 
-        <!-- ================= LOWER GRID ================= -->
+        <!-- Two Column Reports -->
         <section class="reports-grid">
 
 
-            <!-- ATTENDANCE REPORT -->
+            <!-- Attendance Report -->
             <div class="report-section">
 
                 <div class="section-header">
+
                     <div>
                         <h2>Attendance Report</h2>
                         <p>Student attendance overview</p>
                     </div>
+
                 </div>
 
 
-                <div class="attendance-list" id="attendanceList">
+                <div class="attendance-list">
 
-                    <!-- Attendance data will be inserted using JavaScript -->
+                    <div class="attendance-item">
+                        <div>
+                            <strong>Rahul</strong>
+                            <span>ID: 101</span>
+                        </div>
+
+                        <strong>93%</strong>
+                    </div>
+
+
+                    <div class="attendance-item">
+                        <div>
+                            <strong>Anu</strong>
+                            <span>ID: 102</span>
+                        </div>
+
+                        <strong>84%</strong>
+                    </div>
+
+
+                    <div class="attendance-item warning">
+                        <div>
+                            <strong>Arjun</strong>
+                            <span>ID: 103</span>
+                        </div>
+
+                        <strong>67%</strong>
+                    </div>
+
+
+                    <div class="attendance-item">
+                        <div>
+                            <strong>Meera</strong>
+                            <span>ID: 104</span>
+                        </div>
+
+                        <strong>91%</strong>
+                    </div>
 
                 </div>
 
             </div>
 
 
-            <!-- TOP PERFORMERS -->
+            <!-- Top Performers -->
             <div class="report-section">
 
                 <div class="section-header">
+
                     <div>
                         <h2>Top Performers</h2>
-                        <p>Highest performing students</p>
+                        <p>Highest academic performers</p>
                     </div>
+
                 </div>
 
 
-                <div class="top-performers" id="topPerformers">
+                <div class="top-performers">
 
-                    <!-- Top performers will be inserted using JavaScript -->
+                    <div class="performer">
+                        <span class="rank">1</span>
+
+                        <div>
+                            <strong>Arjun</strong>
+                            <span>CSE</span>
+                        </div>
+
+                        <strong>92%</strong>
+                    </div>
+
+
+                    <div class="performer">
+                        <span class="rank">2</span>
+
+                        <div>
+                            <strong>Meera</strong>
+                            <span>IT</span>
+                        </div>
+
+                        <strong>88%</strong>
+                    </div>
+
+
+                    <div class="performer">
+                        <span class="rank">3</span>
+
+                        <div>
+                            <strong>Rahul</strong>
+                            <span>CSE</span>
+                        </div>
+
+                        <strong>85%</strong>
+                    </div>
 
                 </div>
 
@@ -182,7 +295,7 @@
         </section>
 
 
-        <!-- ================= COURSE SUMMARY ================= -->
+        <!-- Course Summary -->
         <section class="report-section">
 
             <div class="section-header">
@@ -199,17 +312,17 @@
 
                 <div class="course-item">
                     <span>CSE</span>
-                    <strong id="cseCount">0</strong>
+                    <strong>25</strong>
                 </div>
 
                 <div class="course-item">
                     <span>ECE</span>
-                    <strong id="eceCount">0</strong>
+                    <strong>18</strong>
                 </div>
 
                 <div class="course-item">
                     <span>IT</span>
-                    <strong id="itCount">0</strong>
+                    <strong>22</strong>
                 </div>
 
             </div>
@@ -219,21 +332,13 @@
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- Footer -->
     <footer class="footer">
-
-        <p>
-            © 2026 Student Management System
-        </p>
-
-        <p>
-            Reports Module
-        </p>
-
+        <p>© 2026 Student Management System</p>
+        <p>Reports Module</p>
     </footer>
 
 
-    <!-- JavaScript -->
     <script src="reports.js"></script>
 
 </body>
