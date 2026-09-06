@@ -9,11 +9,11 @@ push their work to the repository independently, on their own feature branch.
 
 | # | Developer | Module      | Folder        | Branch              |
 |---|-----------|-------------|---------------|----------------------|
-| 1 | Dev A     | Backend API | `backend/`    | `feature/backend`   |
-| 2 | Dev B     | Login       | `login/`      | `feature/login`     |
-| 3 | Dev C     | Dashboard   | `dashboard/`  | `feature/dashboard` |
-| 4 | Dev D     | Reports     | `reports/`    | `feature/reports`   |
-| 5 | Dev E     | Students    | `students/`   | `feature/students`  |
+| 1 | Jeneesh   | Backend API | `backend/`    | `feature/backend`   |
+| 2 | Aslah     | Login       | `login/`      | `feature/login`     |
+| 3 | Sreejeev  | Dashboard   | `dashboard/`  | `feature/dashboard` |
+| 4 | Abhijith  | Reports     | `reports/`    | `feature/reports`   |
+| 5 | Twinkle   | Students    | `students/`   | `feature/students`  |
 
 ## Project Structure
 
