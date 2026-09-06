@@ -371,6 +371,7 @@ courseFilter.addEventListener("change", function () {
 
 
     displayReport(filteredStudents);
+    
 });
 
 
