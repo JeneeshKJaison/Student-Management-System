@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    height: 72px;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo {
+    width: 44px;
+    height: 44px;
+
+    background: #2563eb;
+    color: white;
+
+    border-radius: 9px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.brand h1 {
+    font-size: 18px;
+    color: #111827;
+}
+
+.brand p {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.admin {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 35px 25px 50px;
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 28px;
+}
+
+.page-header h2 {
+    font-size: 28px;
+    color: #111827;
+    margin-bottom: 5px;
+}
+
+.page-header p {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.print-button {
+    border: none;
+    background: #2563eb;
+    color: white;
+
+    padding: 10px 16px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.print-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================
+   SUMMARY
+========================= */
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+
+    margin-bottom: 24px;
+}
+
+.card {
+    background: white;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+.card-icon {
+    width: 44px;
+    height: 44px;
+
+    border-radius: 8px;
+
+    background: #eff6ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 13px;
+    color: #6b7280;
+
+    margin-bottom: 3px;
+}
+
+.card h3 {
+    font-size: 21px;
+    color: #111827;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    background: white;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    padding: 22px;
+
+    margin-bottom: 24px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 18px;
+    color: #111827;
+
+    margin-bottom: 3px;
+}
+
+.section-header p {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+
+/* =========================
+   FILTER
+========================= */
+
+#courseFilter {
+    padding: 9px 12px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+
+    background: white;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+#courseFilter:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #f9fafb;
+}
+
+th {
+    padding: 12px 14px;
+
+    text-align: left;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    color: #6b7280;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+td {
+    padding: 14px;
+
+    font-size: 14px;
+
+    color: #374151;
+
+    border-bottom: 1px solid #f0f1f3;
+}
+
+tbody tr:hover {
+    background: #fafafa;
+}
+
+
+/* =========================
+   GRADE
+========================= */
+
+.grade {
+    display: inline-block;
+
+    min-width: 36px;
+
+    padding: 4px 8px;
+
+    text-align: center;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.grade-a {
+    background: #ecfdf5;
+    color: #047857;
+}
+
+.grade-b {
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.grade-c {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.grade-f {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+
+/* =========================
+   TWO COLUMN
+========================= */
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+
+/* =========================
+   ATTENDANCE
+========================= */
+
+.attendance-item {
+    padding: 14px 0;
+
+    border-bottom: 1px solid #f0f1f3;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.attendance-item:last-child {
+    border-bottom: none;
+}
+
+.student-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.student-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.student-id {
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.attendance-value {
+    font-size: 14px;
+    font-weight: bold;
+    color: #047857;
+}
+
+.attendance-warning {
+    color: #dc2626;
+}
+
+
+/* =========================
+   TOP PERFORMERS
+========================= */
+
+.performer {
+    padding: 14px 0;
+
+    border-bottom: 1px solid #f0f1f3;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.performer:last-child {
+    border-bottom: none;
+}
+
+.rank {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    background: #f3f4f6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.performer-info {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.performer-name {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.performer-course {
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.performer-marks {
+    font-size: 14px;
+    font-weight: bold;
+    color: #047857;
+}
+
+
+/* =========================
+   COURSE SUMMARY
+========================= */
+
+.course-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.course-card {
+    padding: 18px;
+
+    background: #f9fafb;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-card span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6b7280;
+}
+
+.course-card strong {
+    font-size: 20px;
+    color: #111827;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: white;
+
+    border-top: 1px solid #e5e7eb;
+
+    padding: 20px 25px;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 0 20px;
+    }
+
+    .container {
+        padding: 25px 15px 40px;
+    }
+
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    .course-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+
+/* =========================
+   PRINT
+========================= */
+
+@media print {
+
+    .print-button,
+    #courseFilter {
+        display: none;
+    }
+
+    body {
+        background: white;
+    }
+
+    .section,
+    .card {
+        box-shadow: none;
+    }
+
+    .footer {
+        display: none;
+    }
+}
